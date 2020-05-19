@@ -1,0 +1,54 @@
+
+Path: /etc/ImageMagick-6/policy.xml
+  Policy: Resource
+    name: disk
+    value: 1GiB
+  Policy: Resource
+    name: map
+    value: 512MiB
+  Policy: Resource
+    name: memory
+    value: 256MiB
+  Policy: Resource
+    name: area
+    value: 128MB
+  Policy: Resource
+    name: height
+    value: 16KP
+  Policy: Resource
+    name: width
+    value: 16KP
+  Policy: Delegate
+    rights: None 
+    pattern: URL
+  Policy: Delegate
+    rights: None 
+    pattern: HTTPS
+  Policy: Delegate
+    rights: None 
+    pattern: HTTP
+  Policy: Path
+    rights: None 
+    pattern: @*
+  Policy: Coder
+    rights: None 
+    pattern: PS
+  Policy: Coder
+    rights: None 
+    pattern: PS2
+  Policy: Coder
+    rights: None 
+    pattern: PS3
+  Policy: Coder
+    rights: None 
+    pattern: EPS
+  Policy: Coder
+    rights: None 
+    pattern: PDF
+  Policy: Coder
+    rights: None 
+    pattern: XPS
+
+Path: [built-in]
+  Policy: Undefined
+    rights: None 
